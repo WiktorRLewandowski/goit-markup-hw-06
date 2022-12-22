@@ -194,6 +194,7 @@ body {
   opacity: 0;
 
   transition: visibility, opacity, 2000ms cubic-bezier(1, -0.3, .84, .74);
+  transition-delay: 250ms;
 }
 
 .is-hidden .modal {
@@ -492,7 +493,8 @@ body {
 
 .advantages h3,
 .join-us h3,
-.aoe-label {
+.aoe-label,
+.newsletter__label-header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428;
@@ -692,15 +694,29 @@ body {
 
 .newsletter {
   margin: 12px 0 0 78px;
+  width: 100%;
 }
 
 .newsletter__label-header {
   margin-bottom: 20px;
 }
 
-.newsletter-input {
+.newsletter__flex {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  /* width: 100%; */
+}
+
+/* .newsletter__flex:first-child {
+  flex-grow: 2;
+} */
+
+.newsletter__input {
   background-color: var(--header-footer-bg-clr);
   color: var(--secondary-address-font-clr);
+  flex-grow: 2;
 
   margin-right: 10px;
   padding: 15px 16px;
@@ -710,22 +726,34 @@ body {
   border-radius: 4px;
 }
 
-.newsletter form {
-  display: flex;
-  align-items: flex-end;
+.newsletter__input:autofill,
+.newsletter__input:-webkit-autofill {
+  background-color: inherit !important;
+  color: inherit !important;
 }
 
-.newsletter-button {
+.newsletter {
+  /* display: flex;
+  align-items: flex-end; */
+}
+
+.newsletter__button {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
   color: var(--primary-address-font-clr);
 
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border: none;
   border-radius: 4px;
 
   padding: 10px 42px;
 }
 
-.newsletter
+
 /* portfolio */
 
 .portfolio {
