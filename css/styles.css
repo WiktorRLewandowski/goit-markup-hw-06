@@ -886,13 +886,12 @@ body {
 }
 
 .newsletter__label-header {
+  display: block;
   margin-bottom: 20px;
 }
 
 .newsletter__flex {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
 
   width: 100%;
 }
