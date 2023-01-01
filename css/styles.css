@@ -65,7 +65,10 @@
 
 *:focus {
   outline: none;
-  
+
+  transform: scale(1.02);
+  transition: transform 250ms;
+
   /* box-shadow: 0 0 5px var(--brand-clr);
   border-radius: 4px; */
 
